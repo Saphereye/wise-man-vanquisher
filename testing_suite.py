@@ -13,7 +13,7 @@ class TestScraper(unittest.TestCase):
             self.assertTrue(val)
     
     def test_auto_login(self):
-        with open("info.json") as f:
+        with open("data.json") as f:
             data = json.load(f)
             val = login_into_sophos(data["username"], data["password"])
             self.assertTrue(val)
